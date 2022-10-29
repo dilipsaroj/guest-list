@@ -128,78 +128,15 @@ export const AdminDashboard = () => {
         todate:"10/10/2022",
       }
   ]
-  const columns = [
-    { title: "ID", field: "id" },
-    { title: "Name", field: "name" },
-    { title: "Email", field: "email" },
-    { title: "Phone Number", field: "phone" },
-    { title: "City", field: "city" }
-  ];
 
   return (
     
     <div>
       <Header />
           <Grid className="wrapper">
-          {/* <table>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Phone No</th>
-                <th>Adult ct</th>
-                <th>Child ct</th>
-                <th>Room Type</th>
-                <th>From Date</th>
-                <th>To Date</th>
-              </tr>
-                {
-                  displayData?.map((item)=>{
-                      return(
-                        <tr>
-                          <td>{item.name}</td>
-                          <td>{item.email_id}</td>
-                          <td>{item.phone_number}</td>
-                          <td>{item.adult_count}</td>
-                          <td>{item.children_count}</td>
-                          <td>{item.room_type}</td>
-                          <td>{item.fromdate}</td>
-                          <td>{item.todate}</td>
-                        </tr>
-                      )
-                  })
-                }
-          </table>     */}
+
           <Grid style={{margin:'100px 0 '}}>
           {BasicFiltering()}
-          </Grid>
-          
-          <Grid>
-          {/* <MaterialTable
-                title="Basic Filtering Preview"
-                columns={[
-                  { title: 'Name', field: 'name' },
-                  { title: 'Surname', field: 'surname' },
-                  { title: 'Birth Year', field: 'birthYear', type: 'numeric' },
-                  {
-                    title: 'Birth Place',
-                    field: 'birthCity',
-                    lookup: { 34: 'İstanbul', 63: 'Şanlıurfa' },
-                  },
-                ]}
-                data={[
-                  { name: 'Mehmet', surname: 'Baran', birthYear: 1987, birthCity: 63 },
-                  { name: 'Zerya Betül', surname: 'Baran', birthYear: 2017, birthCity: 34 },
-                ]}        
-                options={{
-                  filtering: true,
-                  exportCsv:true
-                }}
-              /> */}
-              {/* <div style={{ maxWidth: "100%", paddingTop: "12px" }}>
-                <MaterialTable title="Employee Data" data={data} columns={columns}  options={{
-                filtering: true
-              }} />
-              </div> */}
           </Grid>
           </Grid>
       <Footer />
